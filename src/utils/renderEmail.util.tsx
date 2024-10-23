@@ -1,4 +1,3 @@
-import React from 'react';
 import { render } from '@react-email/components';
 import { EmailVerificationOTP } from '@/emails';
 import { EmailNotification } from './email.validation';

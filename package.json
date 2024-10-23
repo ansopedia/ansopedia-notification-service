@@ -1,6 +1,6 @@
 {
-  "name": "ansopedia-notification-service",
-  "version": "0.0.0",
+  "name": "notification-service",
+  "version": "1.0.0",
   "description": "notification service for ansopedia",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "notification service",
     "ansopedia"
   ],
-  "author": "ansopedia",
+  "author": "sanjay kumar sah",
   "license": "ISC",
   "dependencies": {
     "@react-email/components": "^0.0.22",

@@ -32,6 +32,7 @@ export const otpValidator = z.string().length(6, 'OTP must be exactly 6 characte
 //  Specific payload schemas
 const emailVerificationOTPPayload = z.object({
   otp: otpValidator,
+  recipientName: z.string(),
 });
 
 const emailVerificationMagicLinkPayload = z.object({

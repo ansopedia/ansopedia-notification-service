@@ -1,1 +1,1 @@
-export { default as EmailVerificationOTP } from './email-verification-otp';
+export { default as EmailVerificationOTP } from './templates/email-verification-otp';
