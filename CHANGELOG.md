@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [1.0.0] - 2024-10-29
 
 ### Added
 
@@ -13,7 +13,7 @@
   - EmailWrapper component (#11)
   - WithEmailWrapper Higher-Order Component (HOC) (#11)
 - Factory Design Pattern implementation using HOC in React (#11)
-- `recipientName` field in `emailVerificationOTPPayload` (#11)
+- `recipientName` & `otp` fields in `emailVerificationOTPPayload` (#11)
 
 ### Changed
 
