@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
           </Link>
           <Link href="https://instagram.com/ansopedia" className="inline-block mx-2 p-1 rounded">
             <Img
-              src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1729678815/ansopedia/email/instagram_email_template_u8mf2b.svg"
+              src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1730182870/ansopedia/email/instagram_email_template_avxxzr.png"
               width="24"
               height="24"
               alt="Instagram"
