@@ -47,6 +47,10 @@ const passwordResetOTPPayload = z.object({
   otp: otpValidator,
 });
 
+const passwordChangeConfirmationPayload = z.object({
+  recipientName: z.string().min(1, 'Recipient name is required'),
+});
+
 // Define the email notification schema
 const emailNotification = z.discriminatedUnion('eventType', [
   z.object({
@@ -72,6 +76,12 @@ const emailNotification = z.discriminatedUnion('eventType', [
     eventType: z.literal('sendPasswordResetOTP'),
     payload: passwordResetOTPPayload,
     subject: z.string().default('Email Verification OTP'),
+  }),
+  z.object({
+    to: emailValidator,
+    eventType: z.literal('sendPasswordChangeConfirmation'),
+    subject: z.string().default('Password Change Confirmation'),
+    payload: passwordChangeConfirmationPayload,
   }),
   // ... Add other event types and their corresponding payloads ...
 ]);
